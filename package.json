@@ -1,12 +1,15 @@
-export default function handler(req, res) {
-  // XからMantle/BTC情報を取得する処理
-  res.status(200).json({ 
-    status: 'active', 
-    message: 'Crypto info agent running',
-    data: {
-      mantle: 'Mantle network data here',
-      btc: 'Bitcoin data here',
-      timestamp: new Date().toISOString()
-    }
-  });
+{
+  "name": "crypto-info-agent",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "12.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  }
 }
